@@ -1,0 +1,108 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*  font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Serif' , sans-serif;
+*/
+
+.wrapper{
+    max-width: 2570px;
+    width: 100%;
+    margin: 0 auto;
+}
+.center{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.cont1{
+    height: 100px;
+    background-color: #202020;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+
+}
+.navbar .logo {
+    display: block;
+    margin-top: 10px;
+}
+.navbar .logo h5{
+    color: white;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+.navbar .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar .menu li{
+    display: inline-block;
+    padding: 14px;
+    margin-top: 25px;
+}
+.navbar .menu li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.navbar .menu li:hover{
+    background-color: #e25050;
+}
+
+.cont2{
+    height: 20vh;
+    background-color: thistle;
+}
+.cont2 .carousel-caption{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    padding-left: 1%;
+ }
+ .cont2 span{
+     
+     background-color: #202020;
+     padding: 15px;
+     border-radius: 50%;
+ }
+ .cont2 .carousel-caption p{
+     display: inline-block;
+     background-color:tomato;
+ }
+ 
+ .cont2 .carousel-caption h5{
+    display: inline-block;
+    background-color:rgb(114, 103, 102);
+}
