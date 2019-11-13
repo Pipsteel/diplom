@@ -132,7 +132,8 @@ body{
 }
 
 .cont3 {
-    height: 930px;
+    height: 970px;
+    background-color: #fff;
 }
 .cont3 .cont3txt h2{
     padding-top: 70px;
@@ -156,14 +157,14 @@ body{
 .cont3 .cont3cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .cont3 .cont3cards .cards {
     min-width: 210px;
     max-width: 370px;
     margin: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .cont3 .cont3cards .cards img {
@@ -184,19 +185,125 @@ body{
     font-size: 13px;
 }
 
-
-
-
-
+.cont4{
+    height: 875px;
+    background: url(/imgs/cont4fon.png) ;
+}
+.cont4 .cont4txt{
+    text-align: center;
+}
+.cont4 .cont4txt h2{
+    padding-top: 65px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px ;
+    font-weight: 700 ;
+}
+.cont4 .cont4txt hr{
+    background-color: #fff;
+    width: 50px;
+    height: 2px;
+    margin-bottom: 60px;
+}
+.cont4 .trainer_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cont4 .trainers{
+    height:315px ;
+    width: 270px;
+    background-color: #fff;
+    margin: 11px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.cont4 .trainers .face h2{
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px ;
+    font-weight: 700 ;
+    text-transform: uppercase;
+}
+.cont4 .trainers .face h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px ;
+    color: #c4c4c4;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.cont4 .trainers .back h2{
+    padding-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px ;
+    font-weight: 700 ;
+    text-transform: uppercase;
+}
+.cont4 .trainers .back h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px ;
+    color: #c4c4c4;
+    text-transform: uppercase;
+    margin-left: 22px;
+}
+.cont4 .trainers .back p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #9b9b9b;
+    width: 240px;
+    margin: 0;
+    margin-left: 20px;
+}
+.cont4 .trainers .back .links{
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cont4 .trainers .back .links a{
+    margin: 0;
+    padding: 0;
+}
+.cont4 .trainers .back{
+    display: none;
+}
+.cont4 .trainers:hover .back{
+    display: inline-block;
+}
+.cont4 .trainers:hover .face{
+    display: none;
+}
 
 
 /*************************************************************************/
+@media (max-width: 1170px){
+    .cont3 {height: 1230px;}
+    .cont4 {height: 1210px;}
+}
+
 @media (max-width: 1000px){
     .cont2 .carousel-caption{
         top: 30%;
 }
 
+@media (max-width: 8750px){
+    .cont4 {height: 1550px;}
+}
+
 @media (max-width: 800px){
     .cont2 .carousel-caption{
         top: 20%;
+}
+
+@media (max-width: 780px){
+    .cont3 {height: 2240px;}
+}
+
+@media (max-width: 585px){
+    .cont4 {height: 2950px;}
 }
