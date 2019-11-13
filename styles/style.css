@@ -23,7 +23,9 @@ time, mark, audio, video {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Droid Serif' , sans-serif;
 */
-
+body{
+    background-color: rgb(139, 139, 139);
+}
 .wrapper{
     max-width: 2570px;
     width: 100%;
@@ -53,7 +55,7 @@ time, mark, audio, video {
     color: white;
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
 
 }
 .navbar .menu ul {
@@ -79,7 +81,8 @@ time, mark, audio, video {
 }
 
 .cont2{
-    height: 20vh;
+    overflow: hidden;/*вопросы по поводу адаптива картинки и третьего блока*/
+    height: 581px;
     background-color: thistle;
 }
 .cont2 .carousel-caption{
@@ -87,7 +90,7 @@ time, mark, audio, video {
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    top: 40%;
+    top: 30%;
     text-align: left;
     padding-left: 1%;
  }
@@ -99,10 +102,101 @@ time, mark, audio, video {
  }
  .cont2 .carousel-caption p{
      display: inline-block;
-     background-color:tomato;
+     background-color:#d04c4c;
+     font-family: 'Oswald', sans-serif;
+     font-size: 15px;
+     padding: 7px;
+     margin: 0;
+     margin-bottom: 5px;
+
  }
  
  .cont2 .carousel-caption h5{
     display: inline-block;
-    background-color:rgb(114, 103, 102);
+    background-color:#262524;
+    font-family: 'Oswald', sans-serif;
+     font-size: 30px;
+     font-weight: 700;
+     text-transform: uppercase;
+     padding: 20px;
+     margin: 0;
+     margin-bottom: 5px;
+}
+.cont2 .carousel-caption h2{
+    display: inline-block;
+    background-color:#262524;
+    font-family: 'Oswald', sans-serif;
+     font-size: 18px;
+     text-transform: uppercase;
+     padding: 16px;
+}
+
+.cont3 {
+    height: 930px;
+}
+.cont3 .cont3txt h2{
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px ;
+    font-weight: 700 ;
+}
+.cont3 .cont3txt P{
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Droid Serif' , sans-serif;
+    font-size: 16px;
+    
+
+}
+.cont3 .cont3txt span{
+    color: #e25050;
+}
+.cont3 .cont3cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cont3 .cont3cards .cards {
+    min-width: 210px;
+    max-width: 370px;
+    margin: 10px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.cont3 .cont3cards .cards img {
+    max-width: 75px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+}
+.cont3 .cont3cards .cards h2{
+    margin-bottom: 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px ;
+    font-weight: 700 ;
+    text-transform: uppercase;
+}
+.cont3 .cont3cards .cards p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+/*************************************************************************/
+@media (max-width: 1000px){
+    .cont2 .carousel-caption{
+        top: 30%;
+}
+
+@media (max-width: 800px){
+    .cont2 .carousel-caption{
+        top: 20%;
 }
