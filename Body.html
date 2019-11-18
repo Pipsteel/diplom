@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./js/js.js">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Raleway:300,400,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fonts/droidsrifts.css">
+    <link rel="stylesheet" href="./assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 <body>
     <div class="wrapper">
@@ -17,10 +21,15 @@
             <section class="cont1">
             <div class="center">
                 <div class="navbar">
-                    <div class="logo">
+                    <div class="logo"> 
                         <h5>FitnessTime</h5>
                     </div>
-                    <div class="menu">
+                    <div><span class="burger" id="burger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span></div>
+                    <div class="menu" id="menu">
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">Features</a></li>
@@ -34,24 +43,25 @@
                 </div>
             </div>
         </section>
+        </header>
         <section class="cont2">
                 <div class="bd-example">
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
                               <img src="./imgs/cont2fon1.png" class="d-block w-100" style="height: 100%;" alt="...">
-                              <div class="carousel-caption d-none d-md-block">
-                                    <div><p>landing page template</p></div>
-                                    <div><h5>PERFECT Fitness SOLUTION</h5></div>
-                                    <div><h2>best choise for your site</h2></div>
+                              <div class="carousel-caption ">
+                                    <div class="ewq"><p>landing page template</p>
+                                    <h5>PERFECT Fitness SOLUTION</h5>
+                                    <h2>best choise for your site</h2></div>
                               </div>
                             </div>
                             <div class="carousel-item">
                               <img src="./imgs/cont2fon2.png" class="d-block w-100" alt="...">
-                              <div class="carousel-caption d-none d-md-block">
-                                <div><p>landing page template</p></div>
-                                <div><h5>PERFECT Fitness SOLUTION</h5></div>
-                                <div><h2>best choise for your site</h2></div>
+                              <div class="carousel-caption ">
+                                <div class="ewq"><p>landing page template</p>
+                                <h5>PERFECT Fitness SOLUTION</h5>
+                                <h2>best choise for your site</h2></div>
                               </div>
                             </div>
                           </div>
@@ -493,11 +503,185 @@
             </div>
             </div>
         </section>
+        <section class="cont7"> 
+                <div class="container my-4">
+                        <!--Carousel Wrapper-->
+                        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    
+                          <!--Controls-->
+                          <div class="controls-top">
+                            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                          </div>
+                          
+                          <div class="carousel-inner" role="listbox">
+                    
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                    
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="card mb-2">
+                                    <img class="card-img-top" src="./imgs/insta.png"
+                                      alt="Card image cap">
+                                  </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                  <div class="card mb-2">
+                                    <img class="card-img-top " src="./imgs/squer.png"
+                                      alt="Card image cap">
+                                  </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                  <div class="card mb-2">
+                                    <img class="card-img-top" src="./imgs/mic.png"
+                                      alt="Card image cap">
+                                  </div>
+                                </div>
+                              </div>
+                    
+                            </div>
+                            <!--/.First slide-->
+                    
+                            <!--Second slide-->
+                            <div class="carousel-item">
+                    
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="card mb-2">
+                                    <img class="card-img-top" src="./imgs/squer.png"
+                                      alt="Card image cap">
+                                  </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                  <div class="card mb-2">
+                                    <img class="card-img-top" src="./imgs/spoti.png"
+                                      alt="Card image cap">
+                                  </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                  <div class="card mb-2">
+                                    <img class="card-img-top" src="./imgs/insta.png"
+                                      alt="Card image cap">
+                                  </div>
+                                </div>
+                              </div>
+                    
+                            </div>
+                            <!--/.Second slide-->
+                    
+                            <!--Third slide-->
+                            <div class="carousel-item">
+                    
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="card mb-2">
+                                          <img class="card-img-top" src="./imgs/squer.png"
+                                            alt="Card image cap">
+                                        </div>
+                                      </div>
+                          
+                                      <div class="col-md-4 clearfix d-none d-md-block">
+                                        <div class="card mb-2">
+                                          <img class="card-img-top" src="./imgs/spoti.png"
+                                            alt="Card image cap">
+                                        </div>
+                                      </div>
+                          
+                                      <div class="col-md-4 clearfix d-none d-md-block">
+                                        <div class="card mb-2">
+                                          <img class="card-img-top" src="./imgs/insta.png"
+                                            alt="Card image cap">
+                                        </div>
+                                      </div>
+                                    </div>
+                          
+                                  </div>
+                            <!--/.Third slide-->
+                    
+                          </div>
+                          <!--/.Slides-->
+                    
+                        </div>
+                        <!--/.Carousel Wrapper-->
+                    
+                    
+                      </div>
+            
+        </section>
+        <section class="cont8">
+            <div class="center">
+                <div class="top">
+                    <div class="left">
+                            <i class="fab fa-twitter"></i>
+                            <p>RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10)  <spa>days ago</spa> </p>
+                    </div>
+                    <div class="links">
+                            <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                            <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+                            <div><a href="#"><i class="fab fa-tumblr"></i></a></div>
+                            <div><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                            <div><a href="#"><i class="fab fa-tumblr"></i></a></div>
+                            <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+                            <div><a href="#"><i class="fas fa-wifi"></i></a></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom">
+                    <div class="info">
+                        <h2>contact info</h2>
+                        <p class="inftxt">Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui.</p>
+                        <div class="number"><i class="fas fa-mobile"></i><p>+1800 1234 56789</p></div>
+                       <div class="number"><i class="far fa-envelope"></i><p>support@website.com</p></div>
+                    </div>
+                    <div class="right" >
+                        <h2>send us a message</h2>
+                    <div class="input">
+                            <p><input name="login" placeholder="your name" class="norm"></p>
+                            <p><input name="login" placeholder="email address" class="norm"></p>
+                            <p><input name="login" placeholder="subject" class="normas"></p>
+                            <p><input name="login" placeholder="your text" class="big"></p>
+                            <div><p><input type="submit" value="Submit your message >" class="butt"></p>
+                            <p class="txtend">Make sure you put a valid email.</p></div>
+                    </div>
+                </div>
+                </div>
+                <div class="end">
+                    <p>© 2017. All rights reserved. Designed by PSD Booster.</p>
+                    <a href="#">back to top</a>
+                </div>
+            </div>
+        </section>
     </div>
-        <script src="./fontawesome/js/all.js"></script>
+    <script src="./js/js.js"></script>
+           <script src="./fontawesome/js/all.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </div>
+<script src="./assets/owl.carousel.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>$('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        pagination:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })</script>
+</div>
 </body>
 </html>
