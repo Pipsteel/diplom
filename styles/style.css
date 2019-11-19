@@ -37,41 +37,41 @@ body{
     margin: 0 auto;
 }
 .cont1{
-    height: 100px;
     background-color: #202020;
 }
-.navbar{
+.navbarr{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0;
+    margin: 0;
 
 }
-.navbar .logo {
+.navbarr .logo {
     display: block;
     margin-top: 10px;
 }
-.navbar .logo h5{
+.navbarr .logo h5{
     color: white;
     font-size: 24px;
+    padding-top: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
 
 }
-.cont1 .center .navbar .menu{
+.cont1 .center .navbarr .menu{
     display: inline-block;
 }
-.navbar .menu ul {
+.navbarr .menu ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.navbar .menu li{
+.navbarr .menu li{
     display: inline-block;
     padding: 14px;
     margin-top: 25px;
 }
-.navbar .menu li a{
+.navbarr .menu li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -79,16 +79,15 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
-.navbar .menu li:hover{
+.navbarr .menu li:hover{
     background-color: #e25050;
 }
 
 .cont2{
-    overflow: hidden;/*вопросы по поводу адаптива картинки и третьего блока*/
     max-height: 581px;
-    height: auto;
     background-color: thistle;
 }
+
 .cont2 .carousel-caption{
     text-align: left;
     top: 12vmin;
@@ -99,8 +98,12 @@ body{
      padding: 15px;
      border-radius: 50%;
  }
+ .cont2 .carousel{
+     margin: 0 auto;
+ }
  .cont2 .carousel-caption{
-     width: 50%;
+     width: 30%;
+     margin: 0;
      padding: 0;
      display: flex;
      flex-direction: column;
@@ -118,8 +121,8 @@ body{
      display: inline-flex;
      background-color:#d04c4c;
      font-family: 'Oswald', sans-serif;
-     font-size: 1vw;
-     padding: 0.5vw;
+     font-size: 14px;
+     padding: 8px;
      margin: 0;
      margin-bottom: 5px;
  }
@@ -128,10 +131,10 @@ body{
     display: inline-block;
     background-color:#262524;
     font-family: 'Oswald', sans-serif;
-     font-size: 1.2vw;
+     font-size: 24px;
      font-weight: 700;
      text-transform: uppercase;
-     padding: 1vw;
+     padding: 12px;
      margin: 0;
      margin-bottom: 10px;
 }
@@ -139,9 +142,9 @@ body{
     display: inline-block;
     background-color:#262524;
     font-family: 'Oswald', sans-serif;
-     font-size: 1vw;
+     font-size: 16px;
      text-transform: uppercase;
-     padding: 0.8vw;
+     padding: 10px;
      margin: 0;
 }
 
@@ -708,6 +711,8 @@ body{
 @media (max-width: 1119px){
     .cont8 .right .input .normas{
         width: 395px;}
+    .cont8 .right .input .norm{
+        width: 395px;}
         .cont8 .end{
             margin-top: 15px;}
             
@@ -740,12 +745,18 @@ body{
     } 
 }
 @media (max-width: 800px){
-    .cont1 .center .navbar .menu{
+    .cont1 .center .navbarr .menu{
         font-size: 5px;
         flex-direction: column;
     }
-    .cont1 .center .navbar .menu{
+    .cont1 .center .navbarr .menu{
         display: none;
+    }
+    .cont1 .center .navbarr .menu ul{
+        flex-wrap: wrap;
+    }
+    .cont1 .center .navbarr{
+        flex-wrap: wrap;
     }
     .burger{
         display: inline-block;
@@ -760,8 +771,8 @@ body{
 		top: -100px;
 		margin-top: -20px;
 	}
-	.cont1 .center .navbar .show{
-		display: inline-block;
+	.cont1 .center .navbarr .show{
+        display: flex;
     }
     
 }
@@ -780,4 +791,5 @@ body{
             bottom: 0;
         }
 }
+
 
